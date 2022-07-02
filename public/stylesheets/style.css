@@ -1,0 +1,41 @@
+
+*, body {
+ margin: 0 1rem;
+}
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "one two three";
+  margin: 1rem 0;
+}
+
+.nav-brand {
+  grid-area: one;
+}
+
+.nav-list {
+  grid-area: three;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  border: 1px solid #c0bebe;
+  background-color: #c0bebe;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: .5rem 1.5rem;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a.active {
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+}
